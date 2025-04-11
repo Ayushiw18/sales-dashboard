@@ -1,0 +1,9 @@
+.sidebar {
+    width: 200px;
+    background-color: #e3e3e3;
+    padding: 10px;
+    transition: width 0.3s;
+  }
+  .sidebar.collapsed {
+    width: 60px;
+  }

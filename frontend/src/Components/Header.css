@@ -1,0 +1,79 @@
+/* General styles for the header */
+.header {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text for default theme */
+    padding: 10px 20px; /* Padding for the header */
+    display: flex;
+    justify-content: space-between; /* Space between logo and the theme toggle */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .header .theme-toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .theme-toggle label {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: white;
+  }
+  
+  .header .MuiSwitch-root {
+    color: white;
+  }
+  
+  /* Light theme */
+  body.light-theme .header {
+    background-color: #f4f4f4; /* Light background color for light theme */
+    color: #333; /* Dark text for light theme */
+  }
+  
+  body.light-theme .header .logo {
+    color: #333; /* Dark text color for logo in light theme */
+  }
+  
+  body.light-theme .header .theme-toggle label {
+    color: #333; /* Dark text for label in light theme */
+  }
+  
+  /* Dark theme */
+  body.dark-theme .header {
+    background-color: #333; /* Dark background color for dark theme */
+    color: white; /* Light text for dark theme */
+  }
+  
+  body.dark-theme .header .logo {
+    color: white; /* Light text color for logo in dark theme */
+  }
+  
+  body.dark-theme .header .theme-toggle label {
+    color: white; /* Light text for label in dark theme */
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+    }
+  
+    .header .logo {
+      font-size: 1.5rem; /* Adjust logo size */
+      margin-bottom: 10px;
+    }
+  
+    .header .theme-toggle {
+      margin-top: 10px;
+    }
+  }
